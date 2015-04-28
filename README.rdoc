@@ -1,0 +1,5 @@
+To do for Todo:
+
+(1) need author_id in new.html.erb for todo view
+(2) create author now
+(3) need to connect them together and add in edit and delete if possible 

@@ -1,0 +1,17 @@
+<h1>OMGERD A TODO LIST</h1>
+
+<% @todos.each do |todo| %>
+
+    <div>
+        Description: <%= todo.description %> <br>
+    </div>
+
+	<%= button_to "Delete", todo, method: :delete %>
+<% end %>
+
+	<%= form_for :todo, url: "/authors/#{@author.id}/todos", method: "post" do |f| %>
+
+    <%= f.text_field :description %>
+    <%= f.submit "save todo" %>
+
+	<% end %>x

@@ -1,0 +1,19 @@
+<h1>Authors be here, arg matey</h1>
+
+<% @authors.each do |author| %>
+
+    <div>
+        Name: <%= author.name %> <br>
+        Age: <%= author.age %> <br>
+    </div>
+
+	<%= button_to "Delete", author, method: :delete %>
+
+<% end %>
+
+	<%= form_for :author, url: "/authors", method: "post" do |f| %>
+
+    <%= f.text_field :name %>
+    <%= f.submit "save author" %>
+
+	<% end %>

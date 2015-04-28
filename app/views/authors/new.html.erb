@@ -1,0 +1,15 @@
+<h1>So you think you can author</h1>
+
+<%= form_for :authors, url: "/authors", method: "post" do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+  	<%= f.label :age %><br>
+  	<%= f.text_field :age %><br>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
